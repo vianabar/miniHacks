@@ -37,5 +37,11 @@ df_train = df_train.replace('A', 0)
 df_test = df_test.replace('T', 1)
 df_test = df_test.replace('A', 0)
 
+# school: 'GP' to 1 and 'MS' to 0
+df_train = df_train.replace('GP', 1)
+df_train = df_train.replace('MS', 0)
+df_test = df_test.replace('GP', 1)
+df_test = df_test.replace('MS', 0)
+
 df_train.to_csv('train_new.csv')  
 df_test.to_csv('test_new.csv')  
