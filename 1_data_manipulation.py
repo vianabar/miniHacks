@@ -9,4 +9,10 @@
 # Yes or No binary ones : 1 or 0
 # schoolsup, famsup, paid, activities, nursery, higher, internet, romantic (17 to 24)
 
+import pandas as pd
+
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
+
+print(test.head())
 
