@@ -12,6 +12,7 @@ def plot_numeric(dataset, feature):
     # png_title = "boxplot_" + feature + "_vs_grade"
     # ax.savefig("/boxplot_figs/" + png_title)\
 
+    plt.figure()
     sns.boxplot(x=feature, y="grade", data=dataset)
     plt.title("Boxplot of " + feature + " vs. grade")
     png_title = "boxplot_" + feature + "_vs_grade"
