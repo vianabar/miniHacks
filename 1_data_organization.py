@@ -41,8 +41,8 @@ for i in range(len(datasets)):
     datasets[i] = datasets[i].replace( value = 4, to_replace = {'Mjob':'other','Fjob':'other'})
 
     # reason: 'home', 'reputation', 'course', 'other' to 0-3
-    datasets[i] = datasets[i].replace('home', 0)
-    datasets[i] = datasets[i].replace('reputation', 1)
+    datasets[i] = datasets[i].replace('home', 1)
+    datasets[i] = datasets[i].replace('reputation', 0) # inverted bc it was found to have numerical correlation
     datasets[i] = datasets[i].replace('course', 2)
     datasets[i] = datasets[i].replace( value=3, to_replace={'reason':'other'})
 
