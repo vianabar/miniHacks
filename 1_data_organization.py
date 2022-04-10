@@ -52,6 +52,5 @@ for i in range(len(datasets)):
     datasets[i] = datasets[i].replace( value=2, to_replace={'guardian':'other'})
 
 
-
 datasets[0].to_csv('train_new.csv')  
 datasets[1].to_csv('test_new.csv')  
